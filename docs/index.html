@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sonora — radio española en directo</title>
+<meta name="description" content="Sonora es una aplicación para escuchar emisoras de radio españolas en directo.">
+<style>
+  :root {
+    --papel: #E9E2D3; --tinta: #1A1A1A; --tinta-2: #5C574E; --linea: #D3CBB9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --papel: #171716; --tinta: #E9E2D3; --tinta-2: #A9A296; --linea: #322F2B; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--papel); color: var(--tinta);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh; display: flex; flex-direction: column;
+  }
+  main {
+    max-width: 68ch; width: 100%; margin: 0 auto;
+    padding: 96px 24px 48px; flex: 1;
+  }
+  .marca { display: block; width: 44px; height: 44px; color: var(--tinta); }
+  h1 {
+    font-size: clamp(34px, 7vw, 48px); line-height: 1.05; letter-spacing: -.035em;
+    margin: 28px 0 10px;
+  }
+  .entrada { color: var(--tinta-2); font-size: 19px; margin: 0 0 40px; max-width: 46ch; }
+  p { color: var(--tinta-2); margin: 0 0 14px; }
+  strong { color: var(--tinta); }
+  hr { border: 0; border-top: 1px solid var(--linea); margin: 40px 0 28px; }
+  .enlaces { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 0 0 8px; }
+  .enlaces a { color: var(--tinta); text-decoration: none; border-bottom: 1px solid var(--linea); padding-bottom: 1px; }
+  .enlaces a:hover { border-bottom-color: var(--tinta); }
+  footer { color: var(--tinta-2); font-size: 15px; padding: 0 24px 56px; max-width: 68ch; width: 100%; margin: 0 auto; }
+</style>
+</head>
+<body>
+<main>
+
+  <svg class="marca" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Sonora" role="img">
+    <path d="M13.5 0.0664062C14.3622 0.288713 15 1.06838 15 2V32C15 32.9316 14.3622 33.7113 13.5 33.9336C12.6378 33.7113 12 32.9316 12 32V2C12 1.06838 12.6378 0.288713 13.5 0.0664062ZM19.5 0.0664062C20.3622 0.288713 21 1.06838 21 2V32C21 32.9316 20.3622 33.7113 19.5 33.9336C18.6378 33.7113 18 32.9316 18 32V2C18 1.06838 18.6378 0.288713 19.5 0.0664062ZM7.5 3.06543C8.36232 3.28765 9 4.06829 9 5V29C9 29.9316 8.3622 30.7113 7.5 30.9336C6.6378 30.7113 6 29.9316 6 29V5C6 4.06829 6.63768 3.28765 7.5 3.06543ZM25.5 3.06543C26.3623 3.28765 27 4.06829 27 5V29C27 29.9316 26.3622 30.7113 25.5 30.9336C24.6378 30.7113 24 29.9316 24 29V5C24 4.06829 24.6377 3.28765 25.5 3.06543ZM1.5 9.06543C2.36232 9.28765 3 10.0683 3 11V23C3 23.9316 2.3622 24.7113 1.5 24.9336C0.637803 24.7113 0 23.9316 0 23V11C0 10.0683 0.637683 9.28765 1.5 9.06543ZM31.5 9.06543C32.3623 9.28765 33 10.0683 33 11V23C33 23.9316 32.3622 24.7113 31.5 24.9336C30.6378 24.7113 30 23.9316 30 23V11C30 10.0683 30.6377 9.28765 31.5 9.06543Z" fill="currentColor"/>
+    <path opacity="0.4" d="M14 0C15.1046 0 16 0.895431 16 2V32C16 33.1046 15.1046 34 14 34C13.8271 34 13.6601 33.9749 13.5 33.9336C14.3622 33.7113 15 32.9316 15 32V2C15 1.06829 14.3623 0.287655 13.5 0.0654297C13.66 0.0242002 13.8271 0 14 0ZM20 0C21.1046 0 22 0.895431 22 2V32C22 33.1046 21.1046 34 20 34C19.8271 34 19.6601 33.9749 19.5 33.9336C20.3622 33.7113 21 32.9316 21 32V2C21 1.06829 20.3623 0.287655 19.5 0.0654297C19.66 0.0242002 19.8271 0 20 0ZM8 3C9.10457 3 10 3.89543 10 5V29C10 30.1046 9.10457 31 8 31C7.82705 31 7.66006 30.9749 7.5 30.9336C8.3622 30.7113 9 29.9316 9 29V5C9 4.06829 8.36232 3.28765 7.5 3.06543C7.65999 3.0242 7.82714 3 8 3ZM26 3C27.1046 3 28 3.89543 28 5V29C28 30.1046 27.1046 31 26 31C25.8271 31 25.6601 30.9749 25.5 30.9336C26.3622 30.7113 27 29.9316 27 29V5C27 4.06829 26.3623 3.28765 25.5 3.06543C25.66 3.0242 25.8271 3 26 3ZM2 9C3.10457 9 4 9.89543 4 11V23C4 24.1046 3.10457 25 2 25C1.82705 25 1.66006 24.9749 1.5 24.9336C2.3622 24.7113 3 23.9316 3 23V11C3 10.0683 2.36232 9.28765 1.5 9.06543C1.65999 9.0242 1.82714 9 2 9ZM32 9C33.1046 9 34 9.89543 34 11V23C34 24.1046 33.1046 25 32 25C31.8271 25 31.6601 24.9749 31.5 24.9336C32.3622 24.7113 33 23.9316 33 23V11C33 10.0683 32.3623 9.28765 31.5 9.06543C31.66 9.0242 31.8271 9 32 9Z" fill="currentColor"/>
+  </svg>
+
+  <h1>Sonora</h1>
+  <p class="entrada">
+    Radio española en directo. Una aplicación para Android que conecta tu móvil
+    con la emisora que elijas, y nada más.
+  </p>
+
+  <p>
+    Sin cuentas, sin registro y sin servidores propios. Las emisoras favoritas,
+    la última que escuchaste y la comunidad que elegiste se quedan dentro de tu
+    teléfono.
+  </p>
+
+  <hr>
+
+  <div class="enlaces">
+    <a href="privacidad.html">Política de privacidad</a>
+    <a href="mailto:sonora.radio.app@gmail.com">sonora.radio.app@gmail.com</a>
+  </div>
+
+</main>
+
+<footer>
+  Si eres una emisora y quieres que tu señal deje de aparecer en la aplicación,
+  escribe a esa dirección y se retirará.
+</footer>
+</body>
+</html>
