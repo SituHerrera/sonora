@@ -8,6 +8,9 @@
 <style>
   :root {
     --papel: #E9E2D3; --tinta: #1A1A1A; --tinta-2: #5C574E; --linea: #D3CBB9;
+    /* Fijo, no en «ch»: el pie tiene un cuerpo menor y su «ch» es más estrecho,
+       así que con 68ch en los dos las columnas no alinean. */
+    --ancho: 728px;
   }
   @media (prefers-color-scheme: dark) {
     :root { --papel: #171716; --tinta: #E9E2D3; --tinta-2: #A9A296; --linea: #322F2B; }
@@ -20,7 +23,7 @@
     min-height: 100vh; display: flex; flex-direction: column;
   }
   main {
-    max-width: 68ch; width: 100%; margin: 0 auto;
+    max-width: var(--ancho); width: 100%; margin: 0 auto;
     padding: 96px 24px 48px; flex: 1;
   }
   .marca { display: block; width: 44px; height: 44px; color: var(--tinta); }
@@ -35,7 +38,7 @@
   .enlaces { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 0 0 8px; }
   .enlaces a { color: var(--tinta); text-decoration: none; border-bottom: 1px solid var(--linea); padding-bottom: 1px; }
   .enlaces a:hover { border-bottom-color: var(--tinta); }
-  footer { color: var(--tinta-2); font-size: 15px; padding: 0 24px 56px; max-width: 68ch; width: 100%; margin: 0 auto; }
+  footer { color: var(--tinta-2); font-size: 15px; padding: 0 24px 56px; max-width: var(--ancho); width: 100%; margin: 0 auto; }
 </style>
 </head>
 <body>
