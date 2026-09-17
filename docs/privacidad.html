@@ -21,6 +21,7 @@
   h1 { font-size: clamp(30px, 6vw, 42px); line-height: 1.1; letter-spacing: -.03em; margin: 0 0 8px; }
   .fecha { color: var(--tinta-2); font-size: 15px; margin: 0 0 40px; }
   h2 { font-size: 21px; letter-spacing: -.02em; margin: 40px 0 10px; }
+  h3 { font-size: 17px; letter-spacing: -.01em; margin: 26px 0 6px; }
   p, li { color: var(--tinta-2); }
   p { margin: 0 0 14px; }
   strong { color: var(--tinta); }
@@ -38,20 +39,112 @@
 <main>
 
 <h1>Política de privacidad de Sonora</h1>
-<p class="fecha">Última actualización: 14 de septiembre de 2026</p>
+<p class="fecha">Última actualización: 17 de septiembre de 2026</p>
 
 <div class="destacado">
   <p>
-    <strong>Sonora no recoge datos personales, no tiene cuentas ni registro, y no
-    envía información tuya a ningún servidor propio.</strong> No hay servidores de
-    Sonora: la app se limita a conectar tu móvil con la emisora que elijas.
+    <strong>Sonora no tiene cuentas, no te pide datos personales y no tiene
+    servidores propios.</strong> La app conecta tu móvil con la emisora que elijas
+    y nada más. Lo único que sale de tu teléfono lo hace por dos motivos: la
+    emisora que estás escuchando, y la publicidad que sostiene la aplicación.
   </p>
 </div>
 
 <p>
-  Sonora es una aplicación para escuchar emisoras de radio españolas en directo.
-  Esta política explica qué datos maneja, dónde se quedan y qué control tienes
-  sobre ellos.
+  Sonora es una aplicación gratuita para escuchar emisoras de radio españolas en
+  directo. Esta política explica qué datos maneja, cuáles salen del móvil, quién
+  los recibe y qué control tienes sobre ellos.
+</p>
+
+<h2>La publicidad</h2>
+
+<p>
+  Sonora es gratuita y se mantiene con publicidad. Los anuncios los sirve
+  <strong>Google AdMob</strong>, que actúa como proveedor independiente: Sonora no
+  elige qué anuncio ves ni recibe información sobre ti a cambio.
+</p>
+
+<h3>Cuándo aparece</h3>
+
+<p>
+  <strong>Un anuncio, al abrir la aplicación</strong>, y con tres límites que
+  conviene que conozcas porque son deliberados:
+</p>
+
+<ul>
+  <li>
+    <strong>Nunca la primera vez</strong> que abres la app. La pantalla de
+    bienvenida no lleva publicidad.
+  </li>
+  <li>
+    <strong>Una vez por sesión.</strong> Si sales de Sonora y vuelves, no se
+    repite; sólo aparece cuando la app arranca de cero.
+  </li>
+  <li>
+    <strong>En silencio si estás escuchando la radio.</strong> Un anuncio con
+    sonido cortaría la emisión, así que cuando hay una emisora puesta el anuncio
+    se muestra mudo y la radio sigue sonando.
+  </li>
+</ul>
+
+<h3>Qué datos implica</h3>
+
+<p>
+  Para servir anuncios, Google recibe de tu dispositivo:
+</p>
+
+<ul>
+  <li>
+    El <strong>identificador de publicidad</strong> de Android, un número
+    reasignable que identifica al dispositivo —no a ti— con fines publicitarios.
+  </li>
+  <li>
+    El <strong>App Set ID</strong>, un identificador que sólo comparten las apps
+    de un mismo desarrollador y que sirve para prevenir fraude y medir anuncios.
+  </li>
+  <li>
+    Tu <strong>dirección IP</strong> y datos técnicos del dispositivo: modelo,
+    versión de Android, idioma, tamaño de pantalla.
+  </li>
+</ul>
+
+<p>
+  A partir de la IP, Google puede <strong>deducir tu ubicación aproximada</strong>
+  —la ciudad o la provincia— igual que hace cualquier página web que visitas.
+</p>
+
+<p>
+  <strong>Lo que Sonora NO le manda a nadie:</strong> tu ubicación del GPS, tus
+  emisoras favoritas, qué escuchas ni cuánto tiempo. Esos datos no salen de tu
+  teléfono. Puedes consultar cómo trata Google esta información en su
+  <a href="https://policies.google.com/technologies/partner-sites">política de
+  privacidad</a>.
+</p>
+
+<h3>Tu consentimiento, y cómo cambiarlo</h3>
+
+<p>
+  La primera vez que abres Sonora aparece un formulario para que decidas qué
+  permites. Es obligatorio en la Unión Europea y lo gestiona una plataforma
+  certificada por Google. Puedes aceptar, rechazar o elegir finalidad por
+  finalidad.
+</p>
+
+<p>
+  <strong>Si rechazas la personalización</strong>, seguirás viendo anuncios, pero
+  genéricos: no estarán basados en un perfil tuyo.
+</p>
+
+<p>
+  <strong>Puedes cambiar de opinión cuando quieras</strong> desde
+  <em>Ajustes → Privacidad y anuncios</em> dentro de la propia aplicación, que
+  vuelve a abrir ese mismo formulario.
+</p>
+
+<p>
+  Y con independencia de Sonora, Android te deja <strong>restablecer o borrar tu
+  identificador de publicidad</strong> desde Ajustes del teléfono → Privacidad →
+  Anuncios.
 </p>
 
 <h2>Qué se guarda, y dónde</h2>
@@ -68,6 +161,7 @@
   <li>La comunidad autónoma que elegiste, para ordenar el dial.</li>
   <li>El temporizador de apagado, si lo pones.</li>
   <li>Qué emisora enseña cada widget que hayas colocado.</li>
+  <li>Tu respuesta al formulario de consentimiento.</li>
 </ul>
 
 <p>
@@ -88,9 +182,7 @@
 <p>Si aceptas, esto es literalmente lo que ocurre:</p>
 
 <ul>
-  <li>
-    Se pide una <strong>posición aproximada</strong>, no la exacta.
-  </li>
+  <li>Se pide una <strong>posición aproximada</strong>, no la exacta.</li>
   <li>
     Las coordenadas se usan <strong>en la memoria del móvil</strong> para
     calcular cuál de las 50 provincias está más cerca. La tabla de provincias va
@@ -101,7 +193,9 @@
     provincia. Las coordenadas se descartan y no se guardan en ningún sitio.
   </li>
   <li>
-    En ningún momento se envían tus coordenadas a Sonora ni a terceros.
+    <strong>No se envían a los anunciantes.</strong> La publicidad no usa esta
+    ubicación; como se explica más arriba, Google deduce una zona aproximada de
+    tu IP, igual que lo haría sin este permiso.
   </li>
 </ul>
 
@@ -135,18 +229,23 @@
 <h2>Lo que Sonora no tiene</h2>
 
 <ul>
-  <li><strong>No hay publicidad</strong> ni identificadores publicitarios.</li>
-  <li><strong>No hay analítica</strong> ni medición de uso de ningún tipo.</li>
+  <li><strong>No hay analítica propia.</strong> Sonora no sabe qué emisoras
+      escuchas ni cuánto tiempo pasas en la app, y no recibe ningún informe de
+      uso. Google sí recibe datos de interacción con los anuncios, como se
+      explica más arriba.</li>
   <li><strong>No hay cuentas</strong>, ni registro, ni inicio de sesión.</li>
-  <li><strong>No se comparten</strong> ni se venden datos a nadie.</li>
-  <li>No se incluyen kits de terceros más allá de las bibliotecas de Android
-      necesarias para reproducir audio.</li>
+  <li><strong>No se venden datos</strong> a nadie.</li>
+  <li>No se incluye ningún kit de terceros más allá del de publicidad y de las
+      bibliotecas de Android necesarias para reproducir audio.</li>
 </ul>
 
 <h2>Los permisos, y para qué son</h2>
 
 <ul>
-  <li><strong>Internet</strong>: para recibir el audio de las emisoras.</li>
+  <li><strong>Internet</strong>: para recibir el audio de las emisoras y los
+      anuncios.</li>
+  <li><strong>Identificador de publicidad</strong>: para mostrar anuncios, como
+      se explica más arriba.</li>
   <li><strong>Servicio en primer plano y reproducción multimedia</strong>: para
       que la radio siga sonando con la pantalla apagada o en otra app.</li>
   <li><strong>Notificaciones</strong>: para el control de reproducción que aparece
@@ -161,8 +260,23 @@
 
 <p>
   Sonora no está dirigida a menores de 13 años y no recoge conscientemente
-  información de ellos. Como no se recoge ningún dato personal, tampoco hay
-  información de menores que pueda almacenarse.
+  información de ellos. La publicidad que se muestra está limitada a contenido
+  apto para todos los públicos.
+</p>
+
+<h2>Tus derechos</h2>
+
+<p>
+  Como Sonora no guarda ningún dato tuyo fuera de tu propio teléfono, no hay
+  nada que podamos entregarte ni borrar de ningún servidor: borrar los datos de
+  la app, o desinstalarla, elimina absolutamente todo.
+</p>
+
+<p>
+  Sobre los datos que trata Google como proveedor de publicidad, puedes ejercer
+  tus derechos ante Google y, en cualquier caso, retirar tu consentimiento desde
+  la propia aplicación. Si tienes cualquier duda, escribe a la dirección de
+  abajo.
 </p>
 
 <h2>Tus derechos</h2>
