@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sonora — material para prensa</title>
+<meta name="description" content="Capturas, datos y material gráfico de Sonora, una aplicación de radio española en directo para Android.">
+<style>
+  /* Prueba: siempre en oscuro, con el negro y el beige de la app. La versión
+     clara era --papel #E9E2D3, --tinta #1A1A1A, --tinta-2 #5C574E,
+     --linea #D3CBB9, y pasaba a oscuro sólo con el modo oscuro del sistema. */
+  :root {
+    --papel: #1A1A1A; --tinta: #E9E2D3; --tinta-2: #A9A296; --linea: #34312C;
+    --rojo: #FF3D3D;
+    --ancho: 728px;
+  }
+  /* La sigla en matriz de puntos: es la propia tipografía de la app, y aquí
+     sirve de muestra para quien quiera verla antes de instalar nada. */
+  @font-face {
+    font-family: 'Sonoradots'; font-style: normal; font-weight: 400;
+    font-display: swap;
+    src: url(prensa/sonora-dots.ttf) format('truetype');
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--papel); color: var(--tinta);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh; display: flex; flex-direction: column;
+  }
+  main {
+    max-width: var(--ancho); width: 100%; margin: 0 auto;
+    padding: 96px 24px 48px; flex: 1;
+  }
+  .marca { display: block; width: 93px; height: 90px; color: var(--tinta); }
+  h1 {
+    font-size: clamp(34px, 7vw, 48px); line-height: 1.05; letter-spacing: -.035em;
+    margin: 28px 0 10px;
+  }
+  h2 {
+    font-size: 15px; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--tinta-2); font-weight: 700; margin: 0 0 16px;
+  }
+  .entrada { color: var(--tinta-2); font-size: 19px; margin: 0 0 40px; max-width: 46ch; }
+  p { color: var(--tinta-2); margin: 0 0 14px; }
+  strong { color: var(--tinta); }
+  hr { border: 0; border-top: 1px solid var(--linea); margin: 44px 0 28px; }
+  a { color: var(--tinta); }
+  .enlaces { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 0 0 8px; }
+  .enlaces a { color: var(--tinta); text-decoration: none; border-bottom: 1px solid var(--linea); padding-bottom: 1px; }
+  .enlaces a:hover { border-bottom-color: var(--tinta); }
+
+  /* Ficha de datos */
+  dl { margin: 0; display: grid; grid-template-columns: 170px 1fr; gap: 10px 20px; }
+  dt { color: var(--tinta-2); font-size: 15px; }
+  dd { margin: 0; color: var(--tinta); }
+  @media (max-width: 560px) { dl { grid-template-columns: 1fr; gap: 2px 0; } dd { margin-bottom: 12px; } }
+
+  /* Texto listo para copiar */
+  .copiable {
+    border-left: 2px solid var(--linea); padding: 2px 0 2px 20px; margin: 0 0 22px;
+  }
+  .copiable p:last-child { margin-bottom: 0; }
+  .copiable p { color: var(--tinta); }
+
+  /* Capturas */
+  .tira { display: grid; grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: 14px; margin: 0 0 14px; }
+  .tira a { display: block; text-decoration: none; }
+  .tira img { width: 100%; height: auto; display: block; border-radius: 20px; border: 1px solid var(--linea); }
+  .tira span { display: block; font-size: 13px; color: var(--tinta-2); margin-top: 7px; }
+
+  .graficos { display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start; margin: 0 0 14px; }
+  .graficos figure { margin: 0; }
+  .graficos img { display: block; border-radius: 20px; border: 1px solid var(--linea); }
+  .graficos figcaption { font-size: 13px; color: var(--tinta-2); margin-top: 7px; }
+
+  .sigla {
+    font-family: 'Sonoradots', monospace; font-size: clamp(40px, 11vw, 72px);
+    letter-spacing: .04em; line-height: 1.25; color: var(--tinta);
+    margin: 6px 0 18px; word-spacing: .2em;
+  }
+  .nota { font-size: 15px; }
+  footer { color: var(--tinta-2); font-size: 15px; padding: 0 24px 56px; max-width: var(--ancho); width: 100%; margin: 0 auto; }
+</style>
+</head>
+<body>
+<main>
+
+  <svg class="marca" viewBox="99 103 315 306" xmlns="http://www.w3.org/2000/svg" aria-label="Sonora" role="img">
+    <path fill="currentColor" d="M234,103C243.941,103 252,111.059 252,121V409H234V121H225V409H207V121C207,111.059 215.059,103 225,103H234ZM288,103C297.941,103 306,111.059 306,121V391C306,400.941 297.941,409 288,409H279C269.059,409 261,400.941 261,391V121C261,111.059 269.059,103 279,103H288ZM279,391H288V121H279V391ZM180,130C189.941,130 198,138.059 198,148V364C198,373.941 189.941,382 180,382H171C161.059,382 153,373.941 153,364V148C153,138.059 161.059,130 171,130H180ZM342,130C351.941,130 360,138.059 360,148V238C360,244.916 357.399,251.223 353.123,256C357.399,260.777 360,267.084 360,274V382H342V274C342,269.029 337.971,265 333,265V382H315V130H342ZM171,364H180V148H171V364ZM126,184C135.941,184 144,192.059 144,202V220H126V202H117V237.367C117,240.376 118.504,243.186 121.008,244.855L131.977,252.168C139.488,257.175 144,265.605 144,274.633V310C144,319.941 135.941,328 126,328H117C107.059,328 99,319.941 99,310V292H117V310H126V274.633C126,271.624 124.496,268.814 121.992,267.145L111.023,259.832C103.512,254.825 99.0002,246.395 99,237.367V202C99,192.059 107.059,184 117,184H126ZM396,184C405.941,184 414,192.059 414,202V328H396V265H387V328H369V202C369,192.059 377.059,184 387,184H396ZM387,247H396V202H387V247ZM333,247C337.971,247 342,242.971 342,238V148H333V247Z"/>
+  </svg>
+
+  <h1>Material para prensa</h1>
+  <p class="entrada">
+    Todo lo que hay aquí se puede publicar sin pedir permiso. Si necesitas algo
+    que no está, se pide por correo y se manda.
+  </p>
+
+  <h2>Qué es</h2>
+  <div class="copiable">
+    <p>
+      Sonora es una aplicación para Android que reproduce <strong>más de 200
+      emisoras de radio españolas en directo</strong>: las cadenas estatales, las
+      autonómicas públicas y las desconexiones locales, provincia por provincia.
+    </p>
+    <p>
+      No pide cuenta ni registro, no tiene servidores propios y no recoge datos
+      de uso. Los favoritos, la última emisora y la comunidad elegida se quedan
+      en el teléfono. Es gratuita y se mantiene con publicidad: un anuncio al
+      abrir, nunca la primera vez, uno como mucho por sesión, y en silencio si
+      ya hay una emisora puesta para no cortarla.
+    </p>
+  </div>
+
+  <hr>
+
+  <h2>Datos</h2>
+  <dl>
+    <dt>Nombre</dt><dd>Sonora</dd>
+    <dt>Plataforma</dt><dd>Android 8 o posterior</dd>
+    <dt>Descarga</dt><dd><a href="https://play.google.com/store/apps/details?id=es.sonora.radio">Google Play</a></dd>
+    <dt>Precio</dt><dd>Gratuita, con publicidad</dd>
+    <dt>Emisoras</dt><dd>Más de 200</dd>
+    <dt>Diseño y producto</dt><dd>Situ Herrera</dd>
+    <dt>Desarrollo</dt><dd>Situ Herrera, con Claude (Anthropic)</dd>
+    <dt>Paquete</dt><dd>es.sonora.radio</dd>
+    <dt>Sitio</dt><dd><a href="./">situherrera.github.io/sonora</a></dd>
+    <dt>Privacidad</dt><dd><a href="privacidad.html">Política de privacidad</a></dd>
+    <dt>Contacto</dt><dd><a href="mailto:sonora.radio.app@gmail.com">sonora.radio.app@gmail.com</a></dd>
+  </dl>
+
+  <hr>
+
+  <h2>Lo que la distingue</h2>
+
+  <p>
+    <strong>Un diseño cuidado.</strong> Sonora está pensada como un aparato, no
+    como un catálogo: un dial que se gira con el dedo, como el de una radio, una
+    paleta reducida a negro, beige y un rojo de acento, y tipografía grande y
+    legible. Cada pantalla hace una cosa y la hace a la vista.
+  </p>
+
+  <p>
+    <strong>Sencilla de usar.</strong> Se abre, se elige una emisora y suena. No
+    hay cuentas, ni registro, ni menús escondidos: cuatro secciones —inicio,
+    buscar, favoritos y ajustes— y un corazón para guardar las que más escuchas.
+  </p>
+
+  <p>
+    <strong>Una identidad propia.</strong> En lugar de un mosaico de logotipos
+    ajenos, cada emisora se reconoce por su sigla, dibujada en una tipografía de
+    matriz de puntos hecha para la aplicación. Da a Sonora una imagen coherente
+    de principio a fin.
+  </p>
+
+  <p class="sigla">SER COPE RNE ROCK</p>
+
+  <hr>
+
+  <h2>Qué hace</h2>
+
+  <p>
+    <strong>Retroceder sobre el directo.</strong> Quince segundos atrás en una
+    emisión en vivo, que no es algo que la radio permita por sí misma: la
+    aplicación va guardando lo último que ha sonado para poder volver sobre ello.
+  </p>
+
+  <p>
+    <strong>Las emisoras de tu zona.</strong> Además de las cadenas nacionales,
+    las autonómicas públicas y las desconexiones locales de tu comunidad.
+  </p>
+
+  <p>
+    <strong>Tres widgets.</strong> La emisora que suena, los favoritos y la
+    última escuchada, cada uno en su propio widget, sin abrir la aplicación.
+  </p>
+
+  <p>
+    <strong>Un temporizador de apagado</strong> para quien se duerme con la radio
+    puesta.
+  </p>
+
+  <hr>
+
+  <h2>La interfaz</h2>
+  <p class="nota">
+    La pantalla tal cual, sin rótulos ni composición. Suele ser lo que mejor
+    sirve para ilustrar. A 786×1704.
+  </p>
+  <div class="tira">
+    <a href="prensa/interfaz/reproductor.png"><img src="prensa/interfaz-previa/reproductor.png" alt="El reproductor, con la sigla de la emisora en matriz de puntos" loading="lazy" width="330" height="715"><span>Reproductor</span></a>
+    <a href="prensa/interfaz/dial.png"><img src="prensa/interfaz-previa/dial.png" alt="El dial de Sonora" loading="lazy" width="330" height="715"><span>Dial</span></a>
+    <a href="prensa/interfaz/listado.png"><img src="prensa/interfaz-previa/listado.png" alt="Listado de emisoras" loading="lazy" width="330" height="715"><span>Listado</span></a>
+    <a href="prensa/interfaz/buscar.png"><img src="prensa/interfaz-previa/buscar.png" alt="El buscador" loading="lazy" width="330" height="715"><span>Buscador</span></a>
+    <a href="prensa/interfaz/favoritos.png"><img src="prensa/interfaz-previa/favoritos.png" alt="Favoritos" loading="lazy" width="330" height="715"><span>Favoritos</span></a>
+    <a href="prensa/interfaz/region.png"><img src="prensa/interfaz-previa/region.png" alt="El selector de comunidad autónoma, en forma de rueda" loading="lazy" width="330" height="715"><span>Selector de región</span></a>
+  </div>
+
+  <hr>
+
+  <h2>Capturas compuestas</h2>
+  <p class="nota">
+    Las de la ficha de Google Play, con rótulo y fondo. Van mejor para abrir un
+    artículo que para enseñar la aplicación. A 1080×1920.
+  </p>
+  <div class="tira">
+    <a href="prensa/completas/1-dial.png"><img src="prensa/previa/1-dial.jpg" alt="El dial de Sonora" loading="lazy" width="360" height="640"><span>Dial</span></a>
+    <a href="prensa/completas/2-listado.png"><img src="prensa/previa/2-listado.jpg" alt="Listado de emisoras" loading="lazy" width="360" height="640"><span>Listado</span></a>
+    <a href="prensa/completas/3-reproductor.png"><img src="prensa/previa/3-reproductor.jpg" alt="El reproductor abierto" loading="lazy" width="360" height="640"><span>Reproductor</span></a>
+    <a href="prensa/completas/4-buscador.png"><img src="prensa/previa/4-buscador.jpg" alt="El buscador" loading="lazy" width="360" height="640"><span>Buscador</span></a>
+    <a href="prensa/completas/5-region.png"><img src="prensa/previa/5-region.jpg" alt="Elección de comunidad" loading="lazy" width="360" height="640"><span>Tu zona</span></a>
+    <a href="prensa/completas/6-favoritos.png"><img src="prensa/previa/6-favoritos.jpg" alt="Favoritos" loading="lazy" width="360" height="640"><span>Favoritos</span></a>
+    <a href="prensa/completas/7-temporizador.png"><img src="prensa/previa/7-temporizador.jpg" alt="Temporizador de apagado" loading="lazy" width="360" height="640"><span>Temporizador</span></a>
+    <a href="prensa/completas/8-widgets.png"><img src="prensa/previa/8-widgets.jpg" alt="Los tres widgets" loading="lazy" width="360" height="640"><span>Widgets</span></a>
+  </div>
+
+  <hr>
+
+  <h2>Gráficos</h2>
+  <div class="graficos">
+    <figure>
+      <a href="prensa/icono-512.png"><img src="prensa/icono-512.png" alt="Icono de Sonora" width="128" height="128" loading="lazy"></a>
+      <figcaption>Icono · 512×512<br>También en <a href="prensa/icono.svg">SVG</a></figcaption>
+    </figure>
+    <figure>
+      <a href="prensa/widget-ahora.png"><img src="prensa/widget-ahora.png" alt="Widget de la emisora en marcha" width="200" loading="lazy"></a>
+      <figcaption>Widget «ahora»</figcaption>
+    </figure>
+  </div>
+  <p class="nota">
+    <a href="prensa/destacado-1024x500.png">Gráfico destacado</a> ·
+    <a href="prensa/widget-favoritos.png">Widget de favoritos</a> ·
+    <a href="prensa/widget-ultima.png">Widget de la última emisora</a> ·
+    <a href="prensa/sonora-dots.ttf">La tipografía Sonora Dots</a>
+  </p>
+
+  <hr>
+
+  <h2>Sobre las emisoras</h2>
+  <p>
+    Sonora no aloja ni retransmite nada: abre las señales públicas que cada
+    emisora ya difunde por internet. No hay servidores propios por medio.
+  </p>
+  <p>
+    Si eres una emisora y quieres que tu señal deje de aparecer, basta con
+    escribir al correo de contacto y se retira.
+  </p>
+
+  <hr>
+
+  <div class="enlaces">
+    <a href="./">Sonora</a>
+    <a href="https://play.google.com/store/apps/details?id=es.sonora.radio">Google Play</a>
+    <a href="privacidad.html">Política de privacidad</a>
+    <a href="mailto:sonora.radio.app@gmail.com">sonora.radio.app@gmail.com</a>
+  </div>
+
+</main>
+
+<footer>
+  Las capturas, el icono y los gráficos de esta página se pueden reproducir
+  libremente para informar sobre la aplicación.
+</footer>
+</body>
+</html>
